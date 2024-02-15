@@ -78,7 +78,20 @@ body {
     margin-top: 20px;
   }
 
+  .comment-box {
+    max-height: 200px; /* Adjust maximum height as needed */
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in the specified width and height */
+    resize: none; /* Prevent textarea resizing */
+  }
 
+  .comment-box:active {
+    /* Reset any styles that cause the comment box to expand */
+    /* For example, you can set the height to its initial value */
+    height: initial;
+    /* Or you can set max-height to a fixed value */
+    max-height: 200px; /* Adjust as needed */
+  }
 
   .comment {
     margin-bottom: 10px;
