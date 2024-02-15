@@ -96,3 +96,12 @@ body {
   .comment {
     margin-bottom: 10px;
   }
+
+  /* Style for comment box on small screens */
+@media screen and (max-width: 768px) {
+  .comment-box {
+    max-height: 100px; /* Adjust maximum height for small screens */
+    padding: 8px; /* Adjust padding for small screens */
+    width: 70%;
+  }
+}
