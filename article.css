@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+
+.article-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .article-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .article-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .like-comment-section {
+    margin-top: 20px;
+  }
+
+  .like-comment-section button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: rgb(226, 43, 211);
+  }
+
+  .comments-container {
+    margin-top: 20px;
+  }
+
+  .comment {
+    margin-bottom: 10px;
+  }
