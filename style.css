@@ -218,6 +218,11 @@ html {
   color: var(--foreground-secondary);
 }
 
+.dark-theme .article-container {
+  background: var(--background-primary);
+  color: var(--foreground-secondary);
+}
+
 .dark-theme .blog-topic:hover {
   background: var(--foreground-primary);
   color: var(--action-primary);
