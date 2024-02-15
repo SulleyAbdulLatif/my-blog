@@ -100,7 +100,7 @@ body {
 /* Style for comment box on small screens */
 @media screen and (max-width: 768px) {
   .comment-box {
-    max-height: 120px;
+    max-height: 10px;
     padding: 8px;
     touch-action: manipulation; /* Prevent default touch actions like zooming */
   }
