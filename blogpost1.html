@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Industry Article</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
   <!--
     - favicon
@@ -174,6 +175,7 @@
       <div class="container">
 
         <div class="article-container">
+          <img src="https://img-cdn.thepublive.com/fit-in/640x430/filters:format(webp)/bnn/media/media_files/aefb1a33561f63e599ba15ab5ea20e0483366d06953f9b7f7901f7c55619b310.jpg" alt="Article Image" class="article-image">
             <h1 class="article-title">Navigating the Turbulent Waters of Tech Layoffs and AI's Impact on the Job Market</h1>
             <div class="article-content">
               <p>In the fast-paced realm of technology, change is not merely a constant but often an accelerant. The recent spate of layoffs and transformations within the tech industry has left many professionals and observers pondering the future landscape of employment, particularly in light of advancements in artificial intelligence (AI). As companies streamline operations, adapt to market shifts, and embrace automation, both challenges and opportunities abound for workers navigating this dynamic environment.</p>
@@ -208,9 +210,14 @@
           
             
             <div class="like-comment-section">
-              <button onclick="likeArticle()">Like</button>
+              <div class="button-container">
+                <button onclick="likeArticle()"><i class="fas fa-thumbs-up"></i></button>
+                <button onclick="copyArticleLink()"><i class="fas fa-share"></i></button>
+              </div>
               <span id="likeCount">0</span> Likes
             </div>
+            
+            
           
             <div class="comments-container">
               <h3>Comments</h3>
@@ -439,6 +446,15 @@
       likeCount++;
       document.getElementById('likeCount').innerText = likeCount;
     }
+
+    function copyArticleLink() {
+  const articleLink = window.location.href; // Get the current page URL
+  navigator.clipboard.writeText(articleLink).then(function() {
+    alert("Article link copied to clipboard!");
+  }, function() {
+    alert("Failed to copy article link!");
+  });
+}
   
     // Comment functionality
     function addComment() {

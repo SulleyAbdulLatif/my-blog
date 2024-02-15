@@ -5,6 +5,13 @@ body {
     padding: 0;
   }
 
+  .article-image {
+    width: 100%; /* Set the width of the image */
+    max-height: 370px; /* Set the maximum height of the image */
+    object-fit: cover; /* Ensure the image covers its container */
+  }
+  
+
 .article-container {
     max-width: 800px;
     margin: 20px auto;
@@ -32,13 +39,32 @@ body {
     /* color: #333; */
   }
 
-  p{
-    padding: 15px;
+  .article-content p {
+    margin-bottom: 20px; /* Add margin between paragraphs */
+  }
+  
+  .article-content ol {
+    margin-bottom: 20px; /* Add margin below ordered lists */
+    padding-left: 20px;
+  }
+  
+  .article-content li {
+    margin-bottom: 10px; /* Add margin between list items */
   }
 
   .like-comment-section {
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
   }
+  
+  .button-container {
+    display: flex;
+  }
+  
+  .button-container button {
+    margin-right: 10px; /* Adjust spacing between buttons */
+  }
+  
 
   .like-comment-section button {
     padding: 5px 10px;
